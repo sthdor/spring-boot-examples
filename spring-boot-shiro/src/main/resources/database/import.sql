@@ -10,3 +10,30 @@ INSERT INTO `sys_role_permission` (`permission_id`,`role_id`) VALUES (1,1);
 INSERT INTO `sys_role_permission` (`permission_id`,`role_id`) VALUES (2,1);
 INSERT INTO `sys_role_permission` (`permission_id`,`role_id`) VALUES (3,2);
 INSERT INTO `sys_user_role` (`role_id`,`uid`) VALUES (1,1);
+
+#INSERT INTO `user_info` (`uid`,`username`,`name`,`password`,`salt`,`state`) VALUES ('1', 'admin', 'Administratoruser_info', 'd3c59d25033dbf980d29554025c23a75', '8d78869f470951332959580424d4bf4f', 0);
+
+#CREATE TABLE test.sys_permission (id INT, available INT, name VARCHAR(50), parent_id INT, parent_ids VARCHAR(20), permission VARCHAR(50), resource_type VARCHAR(50), url VARCHAR(50));
+
+#INSERT INTO `sys_permission` (`id`,`available`,`name`,`parent_id`,`parent_ids`,`permission`,`resource_type`,`url`) VALUES (1,0,'UserView',0,'0/','userInfo:view','menu','userInfo/userList');
+#INSERT INTO `sys_permission` (`id`,`available`,`name`,`parent_id`,`parent_ids`,`permission`,`resource_type`,`url`) VALUES (2,0,'UserAdd',1,'0/1','userInfo:add','button','userInfo/userAdd');
+#INSERT INTO `sys_permission` (`id`,`available`,`name`,`parent_id`,`parent_ids`,`permission`,`resource_type`,`url`) VALUES (3,0,'UserRemove',1,'0/1','userInfo:del','button','userInfo/userDel');
+
+#CREATE TABLE sys_role (id INT, available INT, description VARCHAR(50), role VARCHAR(50));
+
+#INSERT INTO `sys_role` (`id`,`available`,`description`,`role`) VALUES (1,0,'Administrator','admin');
+#INSERT INTO `sys_role` (`id`,`available`,`description`,`role`) VALUES (2,0,'VIPMember','vip');
+#INSERT INTO `sys_role` (`id`,`available`,`description`,`role`) VALUES (3,1,'test','test');
+
+#CREATE TABLE sys_role_permission (permission_id INT, role_id INT);
+
+#INSERT INTO `sys_role_permission` VALUES ('1', '1');
+#INSERT INTO `sys_role_permission` (`permission_id`,`role_id`) VALUES (1,1);
+#INSERT INTO `sys_role_permission` (`permission_id`,`role_id`) VALUES (2,1);
+#INSERT INTO `sys_role_permission` (`permission_id`,`role_id`) VALUES (3,2);
+
+#CREATE TABLE sys_user_role (role_id INT, uid INT);
+
+#INSERT INTO `sys_user_role` (`role_id`,`uid`) VALUES (1,1);
+
+COMMIT;
